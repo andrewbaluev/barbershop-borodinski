@@ -1,0 +1,14 @@
+.gallery__item {
+    position: relative;
+    height: 170px;
+    border: 7px solid #fff;
+    border-radius: 5px;
+}
+
+.gallery__content {
+    margin: 0;
+}
+
+.gallery__img {
+    object-fit: cover;
+}

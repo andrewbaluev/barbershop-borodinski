@@ -1,0 +1,80 @@
+@import 'libs/normalize';
+
+@import 'variables';
+@import 'blocks/fonts';
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: "PT Sans Narrow", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #000;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    -webkit-clip-path: inset(100%);
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.main {
+    flex: 1 0 auto;
+    background-image: url('../img/background/pattern-light.jpg');
+    background-position: center center;
+    background-repeat: repeat;
+    &-index {
+        background-image: url("../img/background/bg.jpg");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    
+}
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+@import 'blocks/header';
+@import 'blocks/intro';
+@import 'blocks/info';
+@import 'blocks/news';
+@import 'blocks/gallery';
+@import 'blocks/contacts';
+@import 'blocks/appointment';
+@import 'blocks/footer';
+@import 'blocks/page404';
+
+
+@import 'blocks/btn';

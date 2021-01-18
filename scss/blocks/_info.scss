@@ -1,0 +1,48 @@
+.info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 50px 80px;
+    margin-bottom: 35px;
+    color: #000000;
+    background-color: #f8f5f2;
+    background-image: url(../img/other/line.png),
+        url(../img/background/pattern-light.jpg);
+    background-position: center, top left;
+    background-repeat: no-repeat, repeat;
+
+    &-last {
+        margin-bottom: 65px;
+    }
+}
+
+.info__section-left {
+    width: 380px;
+}
+
+.info__section-right {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    &-content {
+        flex: 1 0 auto;
+    }
+}
+
+.info__title {
+    margin: 0;
+    margin-bottom: 25px;
+    font-size: 30px;
+    line-height: 42px;
+}
+
+.info__text {
+    margin: 0;
+}
+
+.info__text-appointment {
+    margin-bottom: 15px;
+}

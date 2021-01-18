@@ -1,0 +1,25 @@
+.news {
+    width: 380px;
+
+    &__list {
+        margin: 0;
+        margin-bottom: 25px;
+        padding: 0;
+        list-style: none;
+    }
+
+    &__item {
+        margin: 0 0 25px 0;
+    }
+
+    &__time {
+        text-transform: none;
+    }
+
+    &__link {
+        color: #000;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
