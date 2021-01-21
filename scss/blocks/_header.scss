@@ -9,80 +9,44 @@
 
 .nav {
     height: 70px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
     justify-content: space-between;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-}
 
-.nav__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
+    &__list {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
 
-.nav__list-main {
-    width: 620px;
-}
+    &__link {
+        display: flex;
+        align-items: center;
+        padding: 23px 20px;
+        font-size: 16px;
+        text-transform: uppercase;
+        color: #fff;
+        cursor: pointer;
+        text-decoration: none;
+        transition: background-color 0.2s ease;
 
-.nav__list-login {
-    width: 140px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-}
+        &:hover,
+        &:focus {
+            background-color: #242424;
+        }
 
-.nav__link {
-    padding: 25px 20px;
-    font-size: 16px;
-    text-transform: uppercase;
-    color: #fff;
-    cursor: pointer;
-    text-decoration: none;
-    -webkit-transition: background-color 0.2s ease;
-    -o-transition: background-color 0.2s ease;
-    transition: background-color 0.2s ease;
-}
+        &:hover svg {
+            opacity: 1;
+        }
 
-.nav__link:hover,
-.nav__link:focus {
-    background-color: #242424;
-}
-
-.nav__link-login {
-    padding-left: 50px;
-    position: relative;
-}
-
-.nav__link-login::before {
-    content: "";
-    position: absolute;
-    top: 27px;
-    left: 24px;
-    width: 16px;
-    height: 18px;
-    background-image: url(../img/icons/sign-in.svg);
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    opacity: 0.3;
-    -webkit-transition: opacity 0.2s ease;
-    -o-transition: opacity 0.2s ease;
-    transition: opacity 0.2s ease;
-}
-
-.nav__link-login:hover::before {
-    opacity: 1;
+        & svg {
+            margin-right: 10px;
+            width: 16px;
+            height: 16px;
+            fill: #fff;
+            opacity: .3;
+            transition: opacity 0.2s ease;
+        }
+    }
 }

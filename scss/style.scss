@@ -3,6 +3,12 @@
 @import 'variables';
 @import 'blocks/fonts';
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 html, body {
     height: 100%;
 }
@@ -57,11 +63,10 @@ input[type="radio"].visually-hidden {
         background-position: center center;
         background-repeat: no-repeat;
     }
-    
 }
 
 .container {
-    width: 940px;
+    width: 960px;
     margin: 0 auto;
     padding: 0 10px;
 }
@@ -75,6 +80,7 @@ input[type="radio"].visually-hidden {
 @import 'blocks/appointment';
 @import 'blocks/footer';
 @import 'blocks/page404';
+@import 'blocks/modal';
 
 
 @import 'blocks/btn';
