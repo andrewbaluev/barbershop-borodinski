@@ -887,6 +887,7 @@ input[type="radio"].visually-hidden {
   /* стили для чекбокса, находящегося в фокусе */
   /* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
   /* стили для чекбокса, находящегося в состоянии disabled */
+  /* стили для чекбокса, находящегося в состоянии disabled и checked */
 }
 
 .modal-form__checkbox::before {
@@ -926,6 +927,11 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-form__checkbox:disabled::before {
+  border-color: #4d4d4d;
+  background-color: #ccc;
+}
+
+.modal-form__checkbox:checked:disabled::before {
   border-color: #4d4d4d;
   background-color: #ccc;
 }
