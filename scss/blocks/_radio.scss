@@ -47,10 +47,10 @@
         background-color: transparent;
         border-color: #000;
     }
-    // &:focus::before {
+    &:focus::before {
         /* стили для radio, находящегося в фокусе */
-        // box-shadow: 0 0 0 1px #f9f5f2, 0 0 0 3px #000;
-    // }
+        box-shadow: none;
+    }
     &:focus:not(:checked)::before {
         /* стили для radio, находящегося в фокусе и не находящегося в состоянии checked */
         border-color: #000;

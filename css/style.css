@@ -977,7 +977,6 @@ input[type="radio"].visually-hidden {
   /* стили для скрытия стандартного элемента input */
   position: relative;
   appearance: none;
-  /* стили для чекбокса, находящегося в фокусе */
 }
 
 .custom__checkbox:hover, .custom__checkbox:focus {
@@ -1022,6 +1021,11 @@ input[type="radio"].visually-hidden {
   border-color: #000;
 }
 
+.custom__checkbox:focus::before {
+  /* стили для чекбокса, находящегося в фокусе */
+  box-shadow: none;
+}
+
 .custom__checkbox:focus:not(:checked)::before {
   /* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
   border-color: #000;
@@ -1054,7 +1058,6 @@ input[type="radio"].visually-hidden {
   /* стили для скрытия стандартного элемента input */
   position: relative;
   appearance: none;
-  /* стили для radio, находящегося в фокусе */
 }
 
 .custom__radio:hover, .custom__radio:focus {
@@ -1098,6 +1101,11 @@ input[type="radio"].visually-hidden {
   /* стили для активного состояния чекбокса (при нажатии на него) */
   background-color: transparent;
   border-color: #000;
+}
+
+.custom__radio:focus::before {
+  /* стили для radio, находящегося в фокусе */
+  box-shadow: none;
 }
 
 .custom__radio:focus:not(:checked)::before {
