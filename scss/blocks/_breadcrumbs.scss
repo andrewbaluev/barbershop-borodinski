@@ -1,0 +1,36 @@
+.breadcrumbs {
+    &__list {
+        padding: 0;
+        margin: 15px 0;
+        display: flex;
+        list-style: none;
+    }
+
+    &__item {
+        & a {
+            text-decoration: none;
+            color: #000;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__item+&__item:before {
+        content: "";
+        display: inline-block;
+        margin: auto 15px;
+        width: 8px;
+        height: 8px;
+        background-color: #000;
+        transform: rotate(45deg);
+    }
+
+    &__item:last-child a {
+        color: #aba9a7;
+        cursor: default;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}

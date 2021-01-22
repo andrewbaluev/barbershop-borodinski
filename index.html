@@ -78,7 +78,7 @@
                     <a class="nav__link" href="404.html">Прайс-лист</a>
                 </li>
                 <li class="nav__item">
-                    <a class="nav__link" href="404.html">Магазин</a>
+                    <a class="nav__link" href="shop.html">Магазин</a>
                 </li>
                 <li class="nav__item">
                     <a class="nav__link" href="404.html">Контакты</a>
@@ -222,7 +222,6 @@
 <footer class="footer">
     <div class="container">
         <div class="footer__wrapper">
-
             <address class="footer__contacts">
                 Барбершоп «Бородинский»
                 <br>
@@ -252,21 +251,9 @@
                         </a>
                     </li>
                     <li class="footer__social-item">
-                        <a class="footer__social-link" target="_blank" href="#!">
+                        <a class="footer__social-link" target="_blank" href="https://www.pinterest.ru/">
                             <span class="visually-hidden">Пинтерест</span>
                             <svg><use href="#pinterest"/></svg>
-                        </a>
-                    </li>
-                    <li class="footer__social-item">
-                        <a class="footer__social-link" target="_blank" href="#!">
-                            <span class="visually-hidden">Твиттер</span>
-                            <svg><use href="#twitter"/></svg>
-                        </a>
-                    </li>
-                    <li class="footer__social-item">
-                        <a class="footer__social-link" target="_blank" href="#!">
-                            <span class="visually-hidden">Ютюб</span>
-                            <svg><use href="#youtube"/></svg>
                         </a>
                     </li>
                 </ul>
@@ -276,7 +263,6 @@
                 <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
             </div>
         </div>
-
     </div>        
 </footer>
 
@@ -297,39 +283,9 @@
             <br>
             <div class="modal-form__wrapper">
             <!-- Разметка замены стандартного вида чекбокса на кастомный -->
-                <label class="modal-form__label" for="remember">
-                    <input class="modal-form__checkbox" id="remember" name="remember" type="checkbox">
-                    <span class="modal-form__checkbox-text">Запомните меня</span>
-                </label>
-                <a href="404.html" class="modal-form__link">Я забыл пароль!</a>
-            </div>
-            <button class="modal-form__btn btn">Войти</button>
-        </form>
-    </div>
-    <button class="modal-close" type="button" aria-label="Закрыть модальное окно">
-        <svg><use href="#close"/></svg>
-    </button>
-</div>
-
-<div class="modal" data-modal="feedback">
-    <div class="modal__content">
-        <h2 class="modal__title">Обратная связь</h2>
-        <div class="modal__text">Введите пожалуйста свой логин и пароль</div>
-        <form class="modal-form" action="#">
-            <label for="#">
-                <span class="visually-hidden">Логин:</span>
-                <input class="modal-form__input" type="text" placeholder="Логин" required>
-            </label>
-            <br>
-            <label>
-                <span class="visually-hidden">Пароль:</span>
-                <input class="modal-form__input" type="password"  placeholder="Пароль" required>
-            </label>
-            <br>
-            <div class="modal-form__wrapper">
-                <label>
-                    <input class="modal-form__check" type="checkbox">
-                    <span class="modal-form__check-text">Запомните меня</span>
+                <label class="custom__label" for="remember">
+                    <input class="custom__checkbox" id="remember" name="remember" type="checkbox">
+                    <span class="custom__text">Запомните меня</span>
                 </label>
                 <a href="404.html" class="modal-form__link">Я забыл пароль!</a>
             </div>

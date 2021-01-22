@@ -71,6 +71,8 @@ input[type="radio"].visually-hidden {
     padding: 0 10px;
 }
 
+@import 'blocks/btn';
+
 @import 'blocks/header';
 @import 'blocks/intro';
 @import 'blocks/info';
@@ -80,7 +82,10 @@ input[type="radio"].visually-hidden {
 @import 'blocks/appointment';
 @import 'blocks/footer';
 @import 'blocks/page404';
+@import 'blocks/page';
 @import 'blocks/modal';
-
-
-@import 'blocks/btn';
+@import 'blocks/checkbox';
+@import 'blocks/radio';
+@import 'blocks/breadcrumbs';
+@import 'blocks/shop';
+@import 'blocks/item';

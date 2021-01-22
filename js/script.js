@@ -1,13 +1,14 @@
 let mySwiper = new Swiper('.swiper-container', {
-  slidesPerView: 1,
-  spaceBetween: 20,
-  loop: true,
-  effect: 'slide',
-  navigation: {
-    nextEl: '.btn__gallery-next',
-    prevEl: '.btn__gallery-back',
-  },
+   slidesPerView: 1,
+   spaceBetween: 20,
+   loop: true,
+   effect: 'slide',
+   navigation: {
+      nextEl: '.btn__gallery-next',
+      prevEl: '.btn__gallery-back',
+   },
 });
+
 
 // Библиотека создает функцию closest. Используя её мы можем искать элемент, который находится выше по дереву и класс которого совпадает с тем который мы ищем.
 // В нашем случае мы должны найти родителя с классом .modal и не важно является ли он прямым предком или между них есть еще какие-то элементы.
