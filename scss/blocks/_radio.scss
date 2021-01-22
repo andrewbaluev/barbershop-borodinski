@@ -2,24 +2,24 @@
     display: inline-block;
 }
 
-/* стили для скрытия стандартного элемента input */
 .custom__radio {
+    /* стили для скрытия стандартного элемента input */
     position: relative;
     appearance: none;
 
-    /* убираем стандартный outline у input */
     &:hover,
     &:focus {
+        /* убираем стандартный outline у input */
         outline: none;
     }        
 
-    /* кастомный outline у span при фокусе на input */
     &:focus+.custom__text {
+        /* кастомный outline у span при фокусе на input */
         outline: 2px dotted #000;
     }
     
-    /* кастомный чекбокс */
     &::before {
+        /* кастомный radio */
         content: "";
         position: absolute;
         top: -15px;
@@ -30,38 +30,38 @@
         border: 2px solid #000;
         border-radius: 50%;
     }
-    /* стили при нахождении элемента в состоянии checked */
     &:checked::before {
+        /* стили при нахождении элемента в состоянии checked */
         background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23000000'/%3e%3c/svg%3e");
         background-color: transparent;
         background-size: auto 85%;
         background-repeat: no-repeat;
         background-position: center center;
     }
-    /* стили при наведении курсора на checkbox */
     &:not(:disabled):not(:checked):hover::before {
+        /* стили при наведении курсора на radio */
         border-color: #000;
     }
-    /* стили для активного состояния чекбокса (при нажатии на него) */
     &:not(:disabled):active::before {
+        /* стили для активного состояния чекбокса (при нажатии на него) */
         background-color: transparent;
         border-color: #000;
     }
-    /* стили для чекбокса, находящегося в фокусе */
     // &:focus::before {
+        /* стили для radio, находящегося в фокусе */
         // box-shadow: 0 0 0 1px #f9f5f2, 0 0 0 3px #000;
     // }
-    /* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
     &:focus:not(:checked)::before {
+        /* стили для radio, находящегося в фокусе и не находящегося в состоянии checked */
         border-color: #000;
     }
-    /* стили для чекбокса, находящегося в состоянии disabled */
     &:disabled::before {
+        /* стили для radio, находящегося в состоянии disabled */
         border-color: #4d4d4d;
         background-color: #ccc;
     }
-    /* стили для чекбокса, находящегося в состоянии disabled и checked */
     &:checked:disabled::before {
+        /* стили для radio, находящегося в состоянии disabled и checked */
         border-color: #4d4d4d;
         background-color: #ccc;
     }
