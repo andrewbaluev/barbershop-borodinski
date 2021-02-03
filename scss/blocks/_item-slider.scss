@@ -1,0 +1,24 @@
+.item-slider {
+    margin-bottom: 30px;
+    height: 80%;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    color: #000;
+    font-size: 50px;
+}
+
+.item-mini-slider {
+    height: auto;
+
+    &__slide {
+        height: 100%;
+        opacity: .4;
+        transition: opacity .3s ease 0s;
+
+        &.swiper-slide-thumb-active {
+            opacity: 1;
+        }
+    }
+}

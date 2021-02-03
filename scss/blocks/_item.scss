@@ -1,28 +1,12 @@
 .item {
     margin-bottom: 100px;
     display: flex;
-    flex: 1;
-
-    &-gallery {
-        flex: 1 1 50%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-
-        img {
-            box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
-        }
-
-        &__big {
-            margin-bottom: 20px;
-            width: 100%;
-            height: auto;
-        }
+    
+    &__swiper {
+        min-width: 0;
     }
 
-
     &-descr {
-        flex: 1 1 50%;
         padding-left: 70px;
         color: #000;
 

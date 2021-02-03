@@ -1,4 +1,4 @@
-let mySwiper = new Swiper('.swiper-container', {
+new Swiper('.swiper-container', {
    slidesPerView: 1,
    spaceBetween: 20,
    loop: true,
@@ -8,6 +8,34 @@ let mySwiper = new Swiper('.swiper-container', {
       prevEl: '.btn__gallery-back',
    },
 });
+
+
+new Swiper('.item-slider', {
+   spaceBetween: 20,
+   loop: true,
+   navigation: {
+     nextEl: '.swiper-button-next',
+     prevEl: '.swiper-button-prev',
+   },
+   mousewheel: {
+      eventsTarget: '.item-slider',
+      forceToAxis: true
+   },
+   thumbs: {
+     swiper: {
+         el: '.item-mini-slider',
+         slidesPerView: 5,
+         spaceBetween: 10
+      }
+   },
+ });
+
+
+
+
+
+
+
 
 
 // Библиотека создает функцию closest. Используя её мы можем искать элемент, который находится выше по дереву и класс которого совпадает с тем который мы ищем.

@@ -32,7 +32,7 @@ a {
 }
 
 img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 
@@ -89,3 +89,5 @@ input[type="radio"].visually-hidden {
 @import 'blocks/breadcrumbs';
 @import 'blocks/shop';
 @import 'blocks/item';
+
+@import 'blocks/item-slider'; 

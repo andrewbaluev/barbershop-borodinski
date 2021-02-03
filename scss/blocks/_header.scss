@@ -21,6 +21,7 @@
     }
 
     &__link {
+        position: relative;
         display: flex;
         align-items: center;
         padding: 23px 20px;
@@ -31,10 +32,25 @@
         text-decoration: none;
         transition: background-color 0.2s ease;
 
+        &.active {
+            &::after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                bottom: 0;
+                left: 0;
+                background-color: #fff;
+                text-align: center;
+            }
+        }
+
         &:hover,
         &:focus {
             background-color: #242424;
         }
+
+
 
         &:hover svg {
             opacity: 1;
@@ -47,6 +63,52 @@
             fill: #fff;
             opacity: .3;
             transition: opacity 0.2s ease;
+        }
+    }
+}
+
+.subnav {
+    position: relative; 
+
+    &__list {
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        min-width: 150px;
+        list-style: none;
+        background-color: #000;
+        color: #fff;
+        transform: translateY(10px);
+        transition: all .2s ease;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 20;
+    }
+
+    &:hover &__list {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    } 
+
+    &__item {
+        display: block;
+        padding: 0;
+        line-height: 1.5;
+    }
+
+    &__link {
+        display: block;
+        color: #fff;
+        padding: 15px 20px;
+        transition: all .3s;
+        text-decoration: none;
+        &:hover {
+            color: #fff;
+            background: #242424;
+            text-decoration: none;
         }
     }
 }

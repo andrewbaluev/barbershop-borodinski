@@ -75,11 +75,16 @@
                 <li class="nav__item">
                     <a class="nav__link" href="404.html">Новости</a>
                 </li>
-                <li class="nav__item">
+                <li class="nav__item subnav">
                     <a class="nav__link" href="404.html">Прайс-лист</a>
+                    <ul class="subnav__list">
+                        <li class="subnav__item"><a class="subnav__link" href="#!">Голова</a></li>
+                        <li class="subnav__item"><a class="subnav__link" href="#!">Борода</a></li>
+                        <li class="subnav__item"><a class="subnav__link" href="#!">Усы</a></li>
+                    </ul>
                 </li>
                 <li class="nav__item">
-                    <a class="nav__link" href="shop.html">Магазин</a>
+                    <a class="nav__link active" href="shop.html">Магазин</a>
                 </li>
                 <li class="nav__item">
                     <a class="nav__link" href="404.html">Контакты</a>
@@ -98,7 +103,7 @@
 
 <!-- Main -->
 <main class="main main-index">
-    <div class="container">
+<div class="container">
 
     <section class="intro">
         <div class="intro__inner">
@@ -128,8 +133,8 @@
         </div>
     </section>
 
-    <div class="info">
-        <section class="info__section-left">
+    <section class="info">
+        <div class="info__inner">
             <h2 class="info__title">Новости</h2>
             <ul class="news__list">
                 <li class="news__item">
@@ -146,9 +151,9 @@
                 </li>
             </ul>
             <a class="btn" href="404.html">Все новости</a>
-        </section>
+        </div>
 
-        <section class="info__section-right">
+        <div class="info__inner">
             <div class="info__section-right-content">
                 <h2 class="info__title">Фотогалерея</h2>
                 <div class="gallery__item swiper-container">
@@ -165,11 +170,11 @@
                 <button class="btn btn__gallery btn__gallery-back" type="button">Назад</button>
                 <button class="btn btn__gallery btn__gallery-next" type="button">Вперед</button>
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
 
-    <div class="info info-last">
-        <section class="info__section-left">
+    <section class="info">
+        <div class="info__inner">
             <h2 class="info__title">Контактная информация</h2>
             <ul class="contacts__list">
                 <li class="contacts__item">
@@ -187,36 +192,35 @@
                     </p>
                 </li>
             </ul>
-            <a class="btn btn__contacts-map" href="404.html">Как проехать</a>
-            <a class="btn open-modal" href="#!" data-modal="feedback">Обратная связь</a>
-        </section>
-        <section class="info__section-right">
+            <div class="btn_wrapper">
+                <a class="btn btn__contacts-map" href="404.html">Как проехать</a>
+                <a class="btn open-modal" href="#!" data-modal="feedback">Обратная связь</a>
+            </div>           
+        </div>
+        <div class="info__inner">
             <h2 class="info__title">Записаться</h2>
-            <p class="info__text info__text-appointment">Укажите желаемую дату и время и мы свяжемся с вами для
-                подтверждения брони</p>
+            <p class="info__text">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
             <form class="appointment__form" action="https://echo.htmlacademy.ru" method="post">
-                <p class="appointment__item">
-                    <label for="appointment-date">Дата</label>
+                <label class="appointment__label" for="appointment-date">Дата
                     <input id="appointment-date" type="text" name="date" value="" placeholder="08.10.2017">
-                </p>
-                <p class="appointment__item">
-                    <label for="appointment-time">Время</label>
+                </label>
+                <label class="appointment__label" for="appointment-time">Время
                     <input id="appointment-time" type="text" name="time" value="" placeholder="10:00">
-                </p>
-                <p class="appointment__item">
-                    <label for="appointment-name">Ваше имя</label>
-                    <input id="appointment-name" type="text" name="name" value="" placeholder="Борода">
-                </p>
-                <p class="appointment__item">
-                    <label for="appointment-phone">Телефон</label>
+                </label>
+                <label class="appointment__label" for="appointment-name">
+                    Ваше имя
+                    <input id="appointment-name" type="text" name="name" value="" placeholder="Борода">                        
+                </label>
+                <label class="appointment__label" for="appointment-phone">
+                    Телефон
                     <input id="appointment-phone" type="tel" name="phone" value="" placeholder="+7 123 456-78-90">
-                </p>
+                </label>               
                 <button class="btn" type="submit">Отправить</button>
             </form>
-        </section>
-    </div>
+        </div>
+    </section>
 
-    </div>
+</div>
 </main>
 
 <!-- Footer -->
